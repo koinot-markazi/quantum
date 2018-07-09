@@ -1,0 +1,376 @@
+@import url(../libs/bootstrap/css/bootstrap.css);
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.eot");
+  src: url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.woff") format("woff"), url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSansItalic/MuseoSansItalic.eot");
+  src: url("../fonts/MuseoSansItalic/MuseoSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansItalic/MuseoSansItalic.woff") format("woff"), url("../fonts/MuseoSansItalic/MuseoSansItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.eot");
+  src: url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.woff") format("woff"), url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot");
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.eot");
+  src: url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.woff") format("woff"), url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot");
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlack/MuseoSansBlack.woff") format("woff"), url("../fonts/MuseoSansBlack/MuseoSansBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.eot");
+  src: url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.woff") format("woff"), url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "MuseoSans", sans-serif;
+  overflow-x: hidden;
+  font-weight: 300;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+::-moz-selection {
+  background-color: #3E7CB8;
+  color: #fff;
+}
+
+::selection {
+  background-color: #3E7CB8;
+  color: #fff;
+}
+
+.quantum-landing {
+  background-color: #ECECEB;
+}
+
+.quantum-landing .blue-line {
+  background-color: #004F9D;
+  height: 10px;
+}
+
+.quantum-landing .navbar svg {
+  fill: #5E5E5E;
+  width: 25px;
+}
+
+.quantum-landing-nav {
+  height: 190px;
+  padding-top: 50px;
+  background-color: #FFFFFF;
+}
+
+.quantum-landing .nav-item {
+  margin-right: 10px;
+}
+
+.quantum-landing .nav-item .nav-link {
+  color: #B3B2B3;
+}
+
+.quantum-landing .nav-item .extra-link {
+  border: 1px solid #3E7CB8;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  padding: 5px 10px;
+  color: #3E7CB8;
+}
+
+.quantum-landing-content-heading {
+  margin-top: 100px;
+}
+
+.quantum-landing-content-heading .heading {
+  font-weight: 200;
+  font-size: 5em;
+  display: inline;
+  color: #5E5E5E;
+}
+
+.quantum-landing-content-heading .link {
+  color: #3E7CB8;
+  border: 1px solid #3E7CB8;
+  padding: 10px 15px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  font-weight: 600;
+}
+
+.quantum-landing-content-info {
+  margin-top: 20px;
+}
+
+.quantum-landing-content-info .paragraph {
+  font-size: 16px;
+  font-weight: 300;
+  color: #5E5E5E;
+}
+
+.quantum-landing-content-info .link {
+  color: #B3B2B3;
+  background-color: #FFFFFF;
+  padding: 5px 15px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+}
+
+.quantum-landing .mockup-bg {
+  background-image: url("../img/Paperback-Book-Mockup-Vol6.png");
+  min-height: 100vh;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  bottom: 100px;
+}
+
+.quantum-landing-extracontent p {
+  color: #5E5E5E;
+}
+
+.quantum-landing-extracontent p span {
+  font-size: 1.2em;
+  color: #B3B2B3;
+}
+
+.quantum-landing-extracontent .m {
+  margin-top: 50px;
+}
+
+.quantum-landing .mockup-bg-2 {
+  width: 100%;
+}
+
+.quantum-landing .quantum-landing-third p {
+  color: #5E5E5E;
+}
+
+.quantum-landing .quantum-landing-third p span {
+  color: #B3B2B3;
+  font-size: 1.2em;
+}
+
+.quantum-landing .quantum-landing-third div a {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border-radius-cursor: pointer;
+}
+
+.quantum-landing .quantum-landing-third div a .partners img {
+  width: 100%;
+}
+
+.quantum-landing .quantum-landing-third div a .partners:hover {
+  -webkit-box-shadow: 0 0 10px silver;
+          box-shadow: 0 0 10px silver;
+}
+
+.quantum-landing .footer-image {
+  margin-top: 100px;
+}
+
+.quantum-landing .footer-image img {
+  width: 100%;
+}
+
+.quantum-landing .footer-image .row {
+  padding: 40px 0;
+  margin: 0;
+}
+
+.quantum-landing .footer-image .row a {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #004F9D;
+  padding: 10px 15px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #004F9D;
+  text-decoration: none;
+}
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .navbar-nav {
+    background-color: #fff;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 10px silver;
+            box-shadow: 0 0 10px silver;
+    z-index: 3;
+    position: relative;
+  }
+  .quantum-landing .nav-item .extra-link {
+    float: left;
+  }
+  .quantum-landing .mockup-bg {
+    bottom: -100px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .quantum-landing-content-heading .heading {
+    font-size: 4em;
+  }
+  .navbar-light .navbar-brand {
+    width: 50%;
+  }
+  .quantum-landing .footer-image .row a {
+    margin-bottom: 10px;
+  }
+}
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}
