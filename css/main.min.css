@@ -263,10 +263,9 @@ body {
   font-size: 1.2em;
 }
 
-.quantum-landing .quantum-landing-third div a {
+.quantum-landing .quantum-landing-third div a .partners {
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  border-radius-cursor: pointer;
 }
 
 .quantum-landing .quantum-landing-third div a .partners img {
@@ -276,6 +275,7 @@ body {
 .quantum-landing .quantum-landing-third div a .partners:hover {
   -webkit-box-shadow: 0 0 10px silver;
           box-shadow: 0 0 10px silver;
+  cursor: pointer;
 }
 
 .quantum-landing .footer-image {
