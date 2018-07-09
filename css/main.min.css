@@ -331,11 +331,22 @@ body {
   .quantum-landing .nav-item .extra-link {
     float: left;
   }
+  .quantum-landing .mockup-bg {
+    bottom: -100px;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/
+  .quantum-landing-content-heading .heading {
+    font-size: 4em;
+  }
+  .navbar-light .navbar-brand {
+    width: 50%;
+  }
+  .quantum-landing .footer-image .row a {
+    margin-bottom: 10px;
+  }
 }
 
 /*==========  Mobile First  ==========*/
